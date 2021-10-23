@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:group2a3/widgets/Member2.dart';
 import '/widgets/Member1.dart';
 
 class Home extends StatefulWidget {
@@ -26,17 +27,31 @@ class _HomeState extends State<Home> {
             ),
           ),
           Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: ElevatedButton(
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Member1()));
+              },
+              child: Text(
+                "Jacob Willprecht",
+                style: TextStyle(fontWeight: FontWeight.bold),
+              ),
+              style: ElevatedButton.styleFrom(primary: Colors.green),
+            ),
+          ),
+          Padding(
               padding: const EdgeInsets.all(8.0),
               child: ElevatedButton(
                   onPressed: () {
                     Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => Member1()));
+                        MaterialPageRoute(builder: (context) => Member2()));
                   },
                   child: Text(
-                    "Jacob Willprecht",
+                    "Muhammad Bilal",
                     style: TextStyle(fontWeight: FontWeight.bold),
                   ),
-                  style: ElevatedButton.styleFrom(primary: Colors.green)))
+                  style: ElevatedButton.styleFrom(primary: Colors.red)))
         ],
       ),
     );
