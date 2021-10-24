@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:group2a3/widgets/Member2.dart';
-import 'package:group2a3/widgets/Member3.dart';
+import 'package:group2a3/widgets/profilePage.dart';
+import 'package:group2a3/widgets/Member4.dart';
 import '/widgets/Member1.dart';
 
 class Home extends StatefulWidget {
@@ -57,8 +58,22 @@ class _HomeState extends State<Home> {
               padding: const EdgeInsets.all(8.0),
               child: ElevatedButton(
                   onPressed: () {
+                    Navigator.push(
+                        context,
+                        (MaterialPageRoute(
+                          builder: (context) => ProfilePage(),
+                        )));
+                  },
+                  style: ElevatedButton.styleFrom(
+                    primary: Colors.deepPurple,
+                  ),
+                  child: Text('Abdullahi Mohamed'))),
+          Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: ElevatedButton(
+                  onPressed: () {
                     Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => Member3()));
+                        MaterialPageRoute(builder: (context) => Member4()));
                   },
                   child: Text(
                     "Caleb Halvorson",
