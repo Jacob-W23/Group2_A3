@@ -3,6 +3,7 @@ import 'package:group2a3/widgets/Member2.dart';
 import 'package:group2a3/widgets/profilePage.dart';
 import 'package:group2a3/widgets/Member4.dart';
 import '/widgets/Member1.dart';
+import '/widgets/Member5.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -79,7 +80,20 @@ class _HomeState extends State<Home> {
                     "Caleb Halvorson",
                     style: TextStyle(fontWeight: FontWeight.bold),
                   ),
-                  style: ElevatedButton.styleFrom(primary: Colors.blueGrey)))
+                  style: ElevatedButton.styleFrom(primary: Colors.blueGrey))),
+          Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => Member5()));
+                  },
+                  style: ElevatedButton.styleFrom(
+                    primary: Colors.red,
+                  ),
+                  child: Text(
+                    'Hunter Fuchs',
+                  ))),
         ],
       ),
     );
