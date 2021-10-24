@@ -54,7 +54,7 @@ class _HomeState extends State<Home> {
                     "Muhammad Bilal",
                     style: TextStyle(fontWeight: FontWeight.bold),
                   ),
-                  style: ElevatedButton.styleFrom(primary: Colors.red))),
+                  style: ElevatedButton.styleFrom(primary: Colors.orange))),
           Padding(
               padding: const EdgeInsets.all(8.0),
               child: ElevatedButton(
