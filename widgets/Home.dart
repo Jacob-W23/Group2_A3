@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:group2a3/widgets/Member2.dart';
+import 'package:group2a3/widgets/profilePage.dart';
+import 'package:group2a3/widgets/Member4.dart';
 import '/widgets/Member1.dart';
-import '/widgets/Member3.dart';
-import '/widgets/Member4.dart';
+import '/widgets/Member5.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
