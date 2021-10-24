@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '/widgets/Member1.dart';
-import '/widgets/member3.dart';
+import '/widgets/Member3.dart';
+import '/widgets/Member4.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -55,6 +56,21 @@ class _HomeState extends State<Home> {
               ),
               child: Text(
                 'Abdullahi Mohamed',
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: ElevatedButton(
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Member4()));
+              },
+              style: ElevatedButton.styleFrom(
+                primary: Colors.red,
+              ),
+              child: Text(
+                'Hunter Fuchs',
               ),
             ),
           ),
